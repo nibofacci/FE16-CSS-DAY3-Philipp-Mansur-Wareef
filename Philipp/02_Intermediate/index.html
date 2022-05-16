@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Day3 | Intermediate</title>
+    <style>
+        body {
+            position: relative;
+            width: 100%;
+            height: 900px;
+            color: black;
+            background-color: white;
+            font-family: Helvetica;
+        }
+
+        h1,h2,h3,h4,h5 {
+            margin: 2px 0px;
+        }
+
+        #container {
+            margin: auto;
+            padding: 10px;
+            top: 50px;
+            position: relative;
+            width:390px;
+            border-style: solid;
+            border-color: black;
+            box-sizing: content-box;
+            border-width: 2px;
+        }
+
+        hr {
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+            margin: 5px 0;
+        }
+
+        .row{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            border: 0;  
+            border-top: 1px;
+            border-style: solid;
+            box-sizing: solid-box;
+            padding: 4px 0;
+        }
+
+        .row-inset {
+            margin-left: 20px;
+        }
+
+        .row-inset .row-item-left {
+            width: 180px;
+        }
+
+        .row-border-top {
+            border-top: 2px;
+        }
+
+        .row-no-border {
+            padding: 0;
+            justify-content: flex-end;
+            border: 0;
+            font-size: 14px;
+        }
+
+        .row-item-left {
+            width: 200px;
+        }
+
+        .row-item-right {
+            display: flex;
+            text-align: right;
+        }
+
+        .category {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+
+        .category-item-left {
+            display: flex;
+            width: 50%;
+        }
+
+        .category-item-right {
+            text-align: right;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .smallprint {
+            font-size: 10px;
+        }
+
+        .small-table {
+            padding: 0;
+        }
+
+        .small-table-left {
+            width: 100%;
+        }
+
+        .indent {
+            text-indent: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 12px;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Nutrition Facts</h1>
+        <h4>Service Size 1 Cup (50g)</h4>
+        <h4>Servings Per Container 10</h4>
+        <hr>
+        <div class="row row-no-border bold">
+            with 1/2<br>
+            cup 1%
+        </div>
+        <div class="category">
+            <div class="category-item-left">Amount Per Serving</div>
+            <div class="category-item-right">Cereal</div>
+            <div class="category-item-right">Milk</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left bold">Calories</div>
+            <div class="row-item-right">190</div>
+            <div class="row-item-right">250</div>
+        </div>
+        <div class="row row-inset">
+            <div class="row-item-left">Calories from Fat</div>
+            <div class="row-item-right">35</div>
+            <div class="row-item-right">45</div>
+        </div>
+        <hr style="border-width: 3px">
+        <div class="row row-no-border bold">
+            % Daily Value**
+        </div>
+        <div class="row">
+            <div class="row-item-left"><span class="bold">Total Fat </span>&nbsp;4g*</div>
+            <div class="row-item-right bold">6%</div>
+            <div class="row-item-right bold">8%</div>
+        </div>
+        <div class="row row-inset">
+            <div class="row-item-left">Saturated Fat 1.5g</div>
+            <div class="row-item-right bold">8%</div>
+            <div class="row-item-right bold">13%</div>
+        </div>
+        <div class="row row-inset">
+            <div class="row-item-left">Trans Fat 0g</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left"><span class="bold">Colesterol</span>&nbsp;0mg</div>
+            <div class="row-item-right bold">0%</div>
+            <div class="row-item-right bold">3%</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left"><span class="bold">Sodium</span>&nbsp;0mg</div>
+            <div class="row-item-right bold">8%</div>
+            <div class="row-item-right bold">11%</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left"><span class="bold">Total Carbohydrate</span>&nbsp;39g</div>
+            <div class="row-item-right bold">13%</div>
+            <div class="row-item-right bold">15%</div>
+        </div>
+        <div class="row row-inset">
+            <div class="row-item-left">Dietry Fiber 6g</div>
+            <div class="row-item-right bold">24%</div>
+            <div class="row-item-right bold">24%</div>
+        </div>
+        <div class="row row-inset">
+            <div class="row-item-left">Sugars 11g</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left"><span class="bold">Protein</span> 4g</div>
+        </div>
+        <hr>
+        <div class="row" style="border: 0;">
+            <div class="row-item-left">Vitamin A</div>
+            <div class="row-item-right bold">0%</div>
+            <div class="row-item-right bold">6%</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left">Vitamin C</div>
+            <div class="row-item-right bold">0%</div>
+            <div class="row-item-right bold">2%</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left">Calcium</div>
+            <div class="row-item-right bold">2%</div>
+            <div class="row-item-right bold">15%</div>
+        </div>
+        <div class="row">
+            <div class="row-item-left">Iron</div>
+            <div class="row-item-right bold">6%</div>
+            <div class="row-item-right bold">6%</div>
+        </div>
+        <div class="row smallprint">
+            *Amount in Cereal. with 1/2 cup 1% milk contributes an additional 60 Calories (10 Calories from Fat),
+            1 g Total Fat (1g Saturated Fat), 10 mg Cholesterol, 70 mg Sodium, 7 g Total Carbohydrate (5 g Sugars), 5 g Protein.
+            <br>
+            **Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:
+        </div>
+        <div class="category small-table">
+            <div class="category-item-left"></div>
+            <div class="category-item-left">Calories</div>
+            <div class="category-item-left">2,000</div>
+            <div class="category-item-left">2,500</div>
+        </div>
+        <hr style="border-width: 0.5px; margin: 2px 0;">
+        <div class="category small-table">
+            <div class="category-item-left">Total Fat</div>
+            <div class="category-item-left">Less than</div>
+            <div class="category-item-left">65g</div>
+            <div class="category-item-left">80g</div>
+        </div>
+        <div class="category small-table">
+            <div class="category-item-left indent">Saturated Fat</div>
+            <div class="category-item-left">Less than</div>
+            <div class="category-item-left">25g</div>
+            <div class="category-item-left">25g</div>
+        </div>
+        <div class="category small-table">
+            <div class="category-item-left">Cholesterol</div>
+            <div class="category-item-left">Less than</div>
+            <div class="category-item-left">300mg</div>
+            <div class="category-item-left">300mg</div>
+        </div>
+        <div class="category small-table">
+            <div class="category-item-left">Sodium</div>
+            <div class="category-item-left">Less than</div>
+            <div class="category-item-left">2,400mg</div>
+            <div class="category-item-left">2,400mg</div>
+        </div>
+        <div class="category small-table">
+            <div class="small-table-left">Total Carbohydrate</div>
+            <div class="category-item-left">300g</div>
+            <div class="category-item-left">375g</div>
+        </div>
+        <div class="category small-table">
+            <div class="category-item-left indent">Dietary Fiber</div>
+            <div class="category-item-left"></div>
+            <div class="category-item-left">25g</div>
+            <div class="category-item-left">30g</div>
+        </div>
+        <hr style="border-width: 0.5px; margin: 2   px 0">
+        <div class="category small-table">
+            <div class="category-item-left">Calories per gram:</div>
+        </div>
+        <footer>
+           <span>Fat 9</span> • <span>Carbohydrate</span> • <span>Protein 4</span>
+        </footer>
+    </div>
+</body>
+</html>
