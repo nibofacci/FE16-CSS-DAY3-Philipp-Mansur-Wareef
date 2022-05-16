@@ -6,163 +6,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition Table</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="head">
-        <header>
-            <h1>Nutrition Facts</h1>
-            <p>Serving Size 1 cup (50g)</p>
-            <p>Servings Per Container 10</p>
-        </header>
+    <div class="table">
+        <div class="head">
+            <header>
+                <h1>Nutrition Facts</h1>
+                <p>Serving Size 1 cup (50g)</p>
+                <p class="thicker-line">Servings Per Container 10</p>
+            </header>
+        </div>
+        <div class="nutritional-value">
+            <div class="div-head untucked-line">
+                <div class="c1">Amount per Serving</div>
+                <div class="c2">Cereal</div>
+                <div class="c3">with 1/2 cup 1% milk</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1">Calories</div>
+                <div class="c2">190</div>
+                <div class="c3">45</div>
+            </div>
+            <div class="tucked-line thick-line">
+                <div class="c1">Calories from Fat</div>
+                <div class="c2">35</div>
+                <div class="c3">45</div>
+            </div>
+        </div>
+
+        <div class="makro">
+            <div class="div-head untucked-line">
+            %Daily Value
+            </div>
+            <div class="untucked-line">
+                <div class="c1"><b>Total Fat</b> 4g*</div>
+                <div class="c2">6%</div>
+                <div class="c3">8%</div>
+            </div>
+
+            <div class="tucked-line">
+                <div class="c1">Saturated Fat 1.5g</div>
+                <div class="c2">8%</div>
+                <div class="c3">13%</div>
+            </div>
+            <div class="tucked-line">
+                <div class="c1">Trans Fat 0g</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1"><b>Cholesterol</b> 0mg</div>
+                <div class="c2">0%</div>
+                <div class="c3">3%</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1"><b>Sodium</b> 190mg</div>
+                <div class="c2">8%</div>
+                <div class="c3">11%</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1"><b>Total Carbohydrate</b> 39g</div>
+                <div class="c2">13%</div>
+                <div class="c3">15%</div>
+            </div>
+            <div class="tucked-line">
+                <div class="c1">Dietary Fiber 6g</div>
+                <div class="c2">34%</div>
+                <div class="c3">34%</div>
+            </div>
+            <div class="tucked-line">
+                <div class="c1">Sugars 11g</div>
+            </div>
+            <div class="untucked-line thicker-line">
+                <div class="c1"><b>Protein 4g</b></div>
+            </div>
+
+        </div>
+
+        <div class="mikro">
+            <div class="untucked-line">
+                <div class="c1">Vitamin A</div>
+                <div class="c2">0%</div>
+                <div class="c3">6%</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1">Vitamin C</div>
+                <div class="c2">0%</div>
+                <div class="c3">2%</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1">Calcium</div>
+                <div class="c2">2%</div>
+                <div class="c3">15%</div>
+            </div>
+            <div class="untucked-line">
+                <div class="c1">Iron</div>
+                <div class="c2">6%</div>
+                <div class="c3">6%</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p style="font-size:12px;">*Amount in Cereal with 1/2 cup 1% milk contributes an
+                additional 60 Calories (10 Calories from Fat), 1g Total Fat (1
+                g Saturated Fat), 10 mg Cholesterol, 70 mg Sodium, 7g
+                Total Carbohydrate  (6g Sugars), 5g Protein.
+                **Percent Daily Values are based on a 2,000  calorie diet.
+                Your daily calues may be higher or lower depending on Your
+                calories needs:
+            </p>
+            <div class="footer-table">
+                <div class="footer-untucked-line footer-div-head">
+                    <div class="footerc1"></div>
+                    <div class="footerc2">Calories:</div>
+                    <div class="footerc3">2,000</div>
+                    <div class="footerc4">2,500</div>
+                </div>
+                <div class="footer-untucked-line">
+                    <div class="footerc1">Total Fat</div>
+                    <div class="footerc2">Less than</div>
+                    <div class="footerc3">65g</div>
+                    <div class="footerc4">80g</div>
+                </div>
+                <div class="footer-tucked-line">
+                    <div class="footerc1">Saturated Fat</div>
+                    <div class="footerc2">Less than</div>
+                    <div class="footerc3">20mg</div>
+                    <div class="footerc4">25mg</div>
+                </div>
+                <div class="footer-untucked-line">
+                    <div class="footerc1">Cholesteral</div>
+                    <div class="footerc2">Less than</div>
+                    <div class="footerc3">300mg</div>
+                    <div class="footerc4">300mg</div>
+                </div>
+                <div class="footer-untucked-line">
+                    <div class="footerc1">Sodium</div>
+                    <div class="footerc2">Less than</div>
+                    <div class="footerc3">2,400mg</div>
+                    <div class="footerc4">2,400mg</div>
+                </div>
+                <div class="footer-untucked-line">
+                    <div class="footerc1">Total Carbohydrate</div>
+                    <div class="footerc2"></div>
+                    <div class="footerc3">300mg</div>
+                    <div class="footerc4">375mg</div>
+                </div>
+                <div class="footer-tucked-line footer-div-head">
+                    <div class="footerc1">Dietary Fiber</div>
+                    <div class="footerc2"></div>
+                    <div class="footerc3">25g</div>
+                    <div class="footerc4">30g</div>
+                </div>
+                <div class="footer-untucked-line">
+                    <div class="footerc1">Calories per gram:</div>
+                </div>
+                <p class="endline" style="margin: 0;">Fat 9 &bull; Carbohydrate 4 &bull; Protein 4</p>
+            </div>
+        </div>
     </div>
-    <div class="nutritional-value">
-        <div class="div-head untucked-line">
-            <div class="c1">Amount per Serving</div>
-            <div class="c2">Cereal</div>
-            <div class="c3">with 1/2 cup 1% milk</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1">Calories</div>
-            <div class="c2">190</div>
-            <div class="c3">45</div>
-        </div>
-        <div class="tucked-line">
-            <div class="c1">Calories from Fat</div>
-            <div class="c2">35</div>
-            <div class="c3">45</div>
-        </div>
-    </div>
-
-    <div class="makro">
-        <div class="div-head untucked-line">
-         %Daily Value
-        </div>
-        <div class="untucked-line">
-            <div class="c1"><b>Total Fat</b> 4g*</div>
-            <div class="c2">6%</div>
-            <div class="c3">8%</div>
-        </div>
-
-        <div class="tucked-line">
-            <div class="c1">Saturated Fat 1.5g</div>
-            <div class="c2">8%</div>
-            <div class="c3">13%</div>
-        </div>
-        <div class="tucked-line">
-            <div class="c1">Trans Fat 0g</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1"><b>Cholesterol</b> 0mg</div>
-            <div class="c2">0%</div>
-            <div class="c3">3%</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1"><b>Sodium</b> 190mg</div>
-            <div class="c2">8%</div>
-            <div class="c3">11%</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1"><b>Total Carbohydrate</b> 39g</div>
-            <div class="c2">13%</div>
-            <div class="c3">15%</div>
-        </div>
-        <div class="tucked-line">
-            <div class="c1">Dietary Fiber 6g</div>
-            <div class="c2">34%</div>
-            <div class="c3">34%</div>
-        </div>
-        <div class="tucked-line">
-            <div class="c1">Sugars 11g</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1"><b>Protein 4g</b></div>
-        </div>
-
-    </div>
-
-    <div class="mikro">
-        <div class="untucked-line">
-            <div class="c1">Vitamin A</div>
-            <div class="c2">0%</div>
-            <div class="c3">6%</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1">Vitamin C</div>
-            <div class="c2">0%</div>
-            <div class="c3">2%</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1">Calcium</div>
-            <div class="c2">2%</div>
-            <div class="c3">15%</div>
-        </div>
-        <div class="untucked-line">
-            <div class="c1">Iron</div>
-            <div class="c2">6%</div>
-            <div class="c3">6%</div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>*Amount in Cereal with 1/2 cup 1% milk contributes an
-            additional 60 Calories (10 Calories from Fat), 1g Total Fat (1
-            g Saturated Fat), 10 mg Cholesterol, 70 mg Sodium, 7g
-            Total Carbohydrate  (6g Sugars), 5g Protein.
-            **Percent Daily Values are based on a 2,000  calorie diet.
-            Your daily calues may be higher or lower depending on Your
-            calories needs:
-        </p>
-        <div class="footer-table">
-            <div class="footer-untucked-line">
-                <div class="footerc1"></div>
-                <div class="footerc2">Calories:</div>
-                <div class="footerc3">2,000</div>
-                <div class="footerc4">2,500</div>
-            </div>
-            <div class="footer-untucked line">
-                <div class="footerc1">Total Fat</div>
-                <div class="footerc2">Less than</div>
-                <div class="footerc3">65g</div>
-                <div class="footerc4">80g</div>
-            </div>
-            <div class="footer-tucked-line">
-                <div class="footerc1">Saturated Fat</div>
-                <div class="footerc2">Less than</div>
-                <div class="footerc3">20mg</div>
-                <div class="footerc4">25mg</div>
-            </div>
-            <div class="footer-untucked-line">
-                <div class="footerc1">Cholesteral</div>
-                <div class="footerc2">Less than</div>
-                <div class="footerc3">300mg</div>
-                <div class="footerc4">300mg</div>
-            </div>
-            <div class="footer-untucked-line">
-                <div class="footerc1">Sodium</div>
-                <div class="footerc2">Less than</div>
-                <div class="footerc3">2,400mg</div>
-                <div class="footerc4">2,400mg</div>
-            </div>
-            <div class="footer-untucked-line">
-                <div class="footerc1">Total Carbohydrate</div>
-                <div class="footerc2"></div>
-                <div class="footerc3">300mg</div>
-                <div class="footerc4">375mg</div>
-            </div>
-            <div class="footer-tucked-line">
-                <div class="footerc1">Dietary Fiber</div>
-                <div class="footerc2"></div>
-                <div class="footerc3">25g</div>
-                <div class="footerc4">30g</div>
-            </div>
-            <div class="footer-untucked-line">
-                <div class="footerc1">Calories per gram:</div>
-            </div>
-            <p class="endline">Fat 9 &bull; Carbohydrate 4 &bull; Protein 4</p>
-        </div>
-    </div>
-
 </body>
 
 </html>
